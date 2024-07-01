@@ -9,13 +9,13 @@ const MovieCard = ({ movie }) => {
           src={movie.PosterSrc}
           alt={movie.Title}
         />
-        <div className="px-6 py-4 text-center">
-          <div className="font-bold text-xl mb-2">{movie.Title}</div>
+        <div className="px-6 py-4 text-center ">
+          <div className="font-bold text-3xl mb-2 bebas-neue-regular">{movie.Title}</div>
           <p className="text-gray-700 text-base">
-            IMDb Rating: {movie['IMDb Rating']}
+            <span className='noto-sans-700'>IMDb Rating:</span> {movie['IMDb Rating']}
           </p>
           <p className="text-gray-700 text-base">
-            Year: {movie.Year}
+          <span className='noto-sans-700'>Year:</span> {movie.Year}
           </p>
         </div>
       </div>
